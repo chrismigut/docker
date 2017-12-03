@@ -1,0 +1,10 @@
+applications:
+- name: customer-service
+  disk_quota: 1G
+  instances: 1
+  memory: 1G
+  routes:
+  - route: customer-service-unslackened-contemptuousness.cfapps.io
+  path: ./target/pf-customer-0.0.1-SNAPSHOT.jar
+  stack: cflinuxfs2
+
